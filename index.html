@@ -131,31 +131,67 @@
     </section>
     <!-- end about section -->
 
-    <section class="section-board-of-director">
+    <section class="section section-board-of-director">
       <div class="container board-of-director-wrapper">
-        <div class="section-title">
-          <span class="theme-title">Board of Directors</span>
-        </div>
-        <div class="director-grid">
-          <!-- Director 1 -->
-          <div class="theme-block-img-with-link">
-            <img src="images/syedaslampasha.jpg" alt="Syed Aslam Pasha">
-            <div class="director-info">
-              <a href="#" class="director-name">Syed Aslam Pasha</a>
-              <p class="director-title">Chairman & Managing Director</p>
-            </div>
+          <div class="section-title section-title-with-arrow js-scroll fade-in-top">
+              <span class="theme-title">Board of</span>
+              <h2>Directors</h2>
           </div>
-          <!-- Director 2 -->
-          <div class="theme-block-img-with-link">
-            <img src="images/Bittu.jpg" alt="Syed Aftab Pasha (Bittu)">
-            <div class="director-info">
-              <a href="#" class="director-name">Syed Aftab Pasha (Bittu)</a>
-              <p class="director-title">Joint Managing Director</p>
-            </div>
+  
+          <div class="splide js-scroll fade-in-bottom" id="board-of-director-slider">
+              <div class="splide__track">
+                  <ul class="splide__list">
+                      <!-- Director 1 -->
+                      <!-- Repeat this block for each director -->
+                      <li class="splide__slide">
+                          <div class="theme-block">
+                              <div class="theme-block-img theme-block-img-with-link">
+                                  <picture>
+                                      <source srcset="/images/syedaslampasha.jpg" type="image/jpg">
+                                      <img loading="lazy" class="square-img-fixed-ratio" src="/images/syedaslampasha.jpg" alt="syedaslampasha">
+                                  </picture>
+                                  <a href="director-profile-link" class="theme-block-icon">
+                                      <!-- SVG icon code -->
+                                  </a>
+                              </div>
+                              <div class="theme-block-title">
+                                  <h4 class="is-capitalized">Syed Aslam Pasha</h4>
+                                  <span class="is-capitalized">Chairman & Managing Director</span>
+                                  <a href="director-profile-link" class="block-link"></a>
+                              </div>
+                          </div>
+                      </li>
+                      <!-- ... other directors ... -->
+                      <li class="splide__slide">
+                        <div class="theme-block">
+                            <div class="theme-block-img theme-block-img-with-link">
+                                <picture>
+                                    <source srcset="/images/Bittu.jpg" type="image/jpg">
+                                    <img loading="lazy" class="square-img-fixed-ratio" src="/images/Bittu.jpg" alt="Bittu">
+                                </picture>
+                                <a href="director-profile-link" class="theme-block-icon">
+                                    <!-- SVG icon code -->
+                                </a>
+                            </div>
+                            <div class="theme-block-title">
+                                <h4 class="is-capitalized">Syed Aftab Pasha (Bittu)</h4>
+                                <span class="is-capitalized">Joint Managing Director</span>
+                                <a href="director-profile-link" class="block-link"></a>
+                            </div>
+                        </div>
+                    </li>
+                  </ul>
+              </div>
+              <div class="splide__arrows">
+                  <!-- Arrows here (optional if you want to navigate slides) -->
+              </div>
           </div>
-        </div>
       </div>
-    </section>
+  </section>
+  
+  
+  
+  
     
   
   <br>
@@ -227,47 +263,40 @@
     </section>
     <!-- end service section -->
 
-    <section class="section shadow-sm lazyload">
+    <section class="section shadow-sm">
       <span class="section-link" id="gallery"></span>
       <h2 class="head text-capitalize">Product Gallery</h2><br>
-      <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
-          <a data-fancybox="gallery-0" href="images/1.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries">
-              <img class="gallery-thumb" src="images/1.jpg" alt="Gallery Photo of Bharath Decorticator Industries" width="100%" height="100%" />
+      <div class="gallery-container">
+          <!-- Your gallery items will go here -->
+          <!-- Repeat this block for each image -->
+          <a data-fancybox="gallery-0" href="images/1.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries" class="gallery-item">
+              <img class="gallery-thumb" src="images/1.jpg" alt="Gallery Photo of Bharath Decorticator Industries" loading="lazy" />
           </a>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
-        <a data-fancybox="gallery-0" href="images/2.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries">
-            <img class="gallery-thumb" src="images/2.jpg" alt="Gallery Photo of Bharath Decorticator Industries" width="100%" height="100%" />
+          <!-- ... other images ... -->
+          <a data-fancybox="gallery-0" href="images/2.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries" class="gallery-item">
+            <img class="gallery-thumb" src="images/2.jpg" alt="Gallery Photo of Bharath Decorticator Industries" loading="lazy" />
         </a>
-    </div>
-    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
-      <a data-fancybox="gallery-0" href="images/3.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries">
-          <img class="gallery-thumb" src="images/3.jpg" alt="Gallery Photo of Bharath Decorticator Industries" width="100%" height="100%" />
+        <a data-fancybox="gallery-0" href="images/3.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries" class="gallery-item">
+          <img class="gallery-thumb" src="images/3.jpg" alt="Gallery Photo of Bharath Decorticator Industries" loading="lazy" />
       </a>
-  </div>
-  <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
-    <a data-fancybox="gallery-0" href="images/8.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries">
-        <img class="gallery-thumb" src="images/8.jpg" alt="Gallery Photo of Bharath Decorticator Industries" width="100%" height="100%" />
+      <a data-fancybox="gallery-0" href="images/4.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries" class="gallery-item">
+        <img class="gallery-thumb" src="images/4.jpg" alt="Gallery Photo of Bharath Decorticator Industries" loading="lazy" />
     </a>
-</div>
-<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
-  <a data-fancybox="gallery-0" href="images/5.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries">
-      <img class="gallery-thumb" src="images/5.jpg" alt="Gallery Photo of Bharath Decorticator Industries" width="100%" height="100%" />
+    <a data-fancybox="gallery-0" href="images/5.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries" class="gallery-item">
+      <img class="gallery-thumb" src="images/5.jpg" alt="Gallery Photo of Bharath Decorticator Industries" loading="lazy" />
   </a>
-</div>
-<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
-  <a data-fancybox="gallery-0" href="images/3.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries">
-      <img class="gallery-thumb" src="images/3.jpg" alt="Gallery Photo of Bharath Decorticator Industries" width="100%" height="100%" />
-  </a>
-</div>
-<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
-  <a data-fancybox="gallery-0" href="images/7.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries">
-      <img class="gallery-thumb" src="images/7.jpg" alt="Gallery Photo of Bharath Decorticator Industries" width="100%" height="100%" />
-  </a>
-</div>
+  <a data-fancybox="gallery-0" href="images/6.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries" class="gallery-item">
+    <img class="gallery-thumb" src="images/6.jpg" alt="Gallery Photo of Bharath Decorticator Industries" loading="lazy" />
+</a>
+<a data-fancybox="gallery-0" href="images/7.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries" class="gallery-item">
+  <img class="gallery-thumb" src="images/7.jpg" alt="Gallery Photo of Bharath Decorticator Industries" loading="lazy" />
+</a>
+<a data-fancybox="gallery-0" href="images/8.jpg" aria-label="Gallery Photo of Bharath Decorticator Industries" class="gallery-item">
+  <img class="gallery-thumb" src="images/8.jpg" alt="Gallery Photo of Bharath Decorticator Industries" loading="lazy" />
+</a>
       </div>
-  </section>  
+  </section>
+  
 
 
     <section class="video-section shadow-sm">
@@ -411,5 +440,19 @@
 });
 
     </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#board-of-director-slider', {
+          // options here
+          type   : 'loop',
+          perPage: 3,
+          perMove: 1,
+          gap    : '30px',
+      }).mount();
+  });
+</script>
+
+
 </body>
 </html>

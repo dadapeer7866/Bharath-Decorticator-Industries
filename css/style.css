@@ -855,72 +855,88 @@ a:focus {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
-
-.section-board-of-director {
-  background-color: #ffffff;
-  padding: 50px 0;
-  text-align: center;
+.section.section-board-of-director {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
 }
 
-.section-board-of-director .section-title .theme-title {
-  color: #856d47;
+.section-title {
+  font-size: 24px; /* Adjusted to match Image 2 style */
+  color: #856d47; /* Color similar to Image 2 */
   text-transform: uppercase;
-  font-weight: 700;
   letter-spacing: 3px;
-  display: block;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
-.section-board-of-director .director-grid {
+.splide {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.splide__track {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.splide__list {
   display: flex;
-  justify-content: center;
   gap: 30px;
 }
 
-.section-board-of-director .theme-block-img-with-link {
-  width: 250px;
-  margin: 0 auto; /* Centering the image block */
+.theme-block {
+  width: 300px; /* Adjust the width as per your design */
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
-.section-board-of-director .theme-block-img-with-link img {
-  height: 350px;
+.theme-block-img {
+  width: 100%; /* Full width */
+  height: auto; /* Height is auto to maintain aspect ratio */
+  display: block;
+}
+
+.theme-block-img img {
   width: 100%;
+  height: auto; /* Adjust height to maintain aspect ratio */
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 0; /* No rounded corners for images */
 }
 
-.section-board-of-director .director-info a.director-name,
-.section-board-of-director .director-info p.director-title {
-  color: #856d47; /* Color matching the example */
-  }
-
-.section-board-of-director .director-info a.director-name {
-  font-size: 24px; /* Size for the name */
-  margin-bottom: 5px; /* Spacing between name and title */
+/* Director's name and title styling */
+.theme-block-title {
+  padding: 10px 0; /* Spacing for title */
+  background-color: transparent; /* No background color */
+  color: #303030; /* Text color - dark grey, match to Image 2 style */
+  font-family: 'Montserrat', sans-serif; /* Font family from Image 2 */
 }
 
-.section-board-of-director .director-info p.director-title {
-  font-size: 18px; /* Size for the title */
-  font-weight: 400; /* Normal weight for the title */
+.theme-block-title h4,
+.theme-block-title span {
+  display: block; /* Titles will appear on new lines */
+  margin: 0; /* Reset margins */
+  font-size: 18px; /* Font size similar to Image 2 */
+  font-weight: 600; /* Weight similar to Image 2 */
+  color: inherit; /* Inherits color from .theme-block-title */
+  letter-spacing: normal; /* Adjust letter-spacing to match Image 2 */
 }
 
-@media screen and (max-width: 768px) {
-  .section-board-of-director .theme-block-img-with-link {
-    width: 100%;
+@media screen and (max-width: 1599px) {
+  .section, .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-
-  .section-board-of-director .theme-block-img-with-link img {
-    height: auto;
-  }
-
-  .section-board-of-director .director-info a.director-name {
-    font-size: 20px; /* Adjusting name size for mobile */
-  }
-
-  .section-board-of-director .director-info p.director-title {
-    font-size: 16px; /* Adjusting title size for mobile */
+  
+  /* Responsiveness: adjust font sizes for smaller screens */
+  .theme-block-title h4,
+  .theme-block-title span {
+    font-size: 16px; /* Smaller font size for mobile devices */
   }
 }
+
 
 /* Service Section Styles */
 .service_section {
@@ -1013,19 +1029,31 @@ a:focus {
   }
 }
 
-
+/* Gallery Container */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax for your preferred size */
+  grid-gap: 10px; /* Adjust the gap for your preferred spacing */
+}
 
 /* Gallery Image Zoom & Shadow on Hover */
 .gallery-thumb {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for zoom and shadow */
   display: block; /* Ensure images are block-level for proper margin handling */
-  margin: 0 auto; /* Center images within their containers */
   width: 100%; /* Ensure images are responsive */
+  aspect-ratio: 4 / 3; /* Adjust the aspect ratio to match your images */
+  object-fit: cover; /* Ensure images cover the area without stretching */
 }
 
 .gallery-thumb:hover {
   transform: scale(1.05); /* Slightly zoom in */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Gallery Item - Responsible for margins and any padding */
+.gallery-item {
+  overflow: hidden; /* Hide overflow caused by image scale */
+  margin: 5px; /* Adjust margin to your preference */
 }
 
 

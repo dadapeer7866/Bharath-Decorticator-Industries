@@ -855,6 +855,7 @@ a:focus {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+
 .section.section-board-of-director {
   position: relative;
   padding-top: 100px;
@@ -1126,3 +1127,56 @@ img {
   </div>
 </div>
 
+.board_of_directors_section .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px;
+}
+
+.board_of_directors_section .directors_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.board_of_directors_section .director_box {
+  flex: 1;
+  max-width: calc(50% - 10px); /* Adjust the width as necessary */
+  margin: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for styling */
+  text-align: center; /* Center text for consistency with feature box */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board_of_directors_section .img-box {
+  width: 100%; /* Full width */
+  height: auto; /* Auto height for responsiveness */
+}
+
+.board_of_directors_section .img-box img {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Adjust based on preference */
+}
+
+.board_of_directors_section .name {
+  font-size: 1.2em; /* Adjust font size as needed */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.board_of_directors_section .designation {
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .board_of_directors_section .director_box {
+    max-width: 100%; /* Each box takes full width on small screens */
+  }
+}

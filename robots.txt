@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /stk/
+Disallow:
 
 Sitemap: https://www.bharathdecorticatorindustries.com/sitemap.xml

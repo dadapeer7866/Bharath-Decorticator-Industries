@@ -1264,3 +1264,46 @@ img {
   font-size: 1em;
   margin: 0.5em;
 }
+
+.product-info-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.product-info-section h2, .product-info-section h3 {
+  color: #000000;
+}
+
+.product-info-section h2 {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(48, 48, 48);
+  text-align: justify;
+}
+
+.product-info-section h3 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.product-info-section p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.product-list li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
